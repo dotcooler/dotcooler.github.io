@@ -7,18 +7,20 @@
   <title>百度地图iOS SDK编译出现x86_64错误 | dotCooler&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="报错内容
-  12345678910Undefined symbols for architecture x86_64:&quot;std::terminate()&quot;, referenced from:     ___clang_call_terminate in BaiduMapAPI_Base(BMKManager.o)     ___clang_call_terminate in BaiduMapA">
+  12345678910Undefined symbols for architecture x86_64:&quot;std::terminate()&quot;, referenced from:     ___clang_call_terminate in BaiduMapAPI_Base(BMKManager.o)     ___clang_call_terminate in BaiduMap">
 <meta property="og:type" content="article">
 <meta property="og:title" content="百度地图iOS SDK编译出现x86_64错误">
 <meta property="og:url" content="http://dotcooler.github.io/2016/05/17/百度地图SDK编译出现x86_64错误/index.html">
 <meta property="og:site_name" content="dotCooler's Blog">
 <meta property="og:description" content="报错内容
-  12345678910Undefined symbols for architecture x86_64:&quot;std::terminate()&quot;, referenced from:     ___clang_call_terminate in BaiduMapAPI_Base(BMKManager.o)     ___clang_call_terminate in BaiduMapA">
-<meta property="og:updated_time" content="2016-05-18T12:57:05.000Z">
+  12345678910Undefined symbols for architecture x86_64:&quot;std::terminate()&quot;, referenced from:     ___clang_call_terminate in BaiduMapAPI_Base(BMKManager.o)     ___clang_call_terminate in BaiduMap">
+<meta property="og:image" content="http://dotcooler.github.io/images/bys1.png">
+<meta property="og:updated_time" content="2016-06-05T11:35:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="百度地图iOS SDK编译出现x86_64错误">
 <meta name="twitter:description" content="报错内容
-  12345678910Undefined symbols for architecture x86_64:&quot;std::terminate()&quot;, referenced from:     ___clang_call_terminate in BaiduMapAPI_Base(BMKManager.o)     ___clang_call_terminate in BaiduMapA">
+  12345678910Undefined symbols for architecture x86_64:&quot;std::terminate()&quot;, referenced from:     ___clang_call_terminate in BaiduMapAPI_Base(BMKManager.o)     ___clang_call_terminate in BaiduMap">
+<meta name="twitter:image" content="http://dotcooler.github.io/images/bys1.png">
   
     <link rel="alternative" href="/atom.xml" title="dotCooler&#39;s Blog" type="application/atom+xml">
   
@@ -200,7 +202,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
+        <p><img src="/images/bys1.png" alt="img caption"></p>
+<ul>
 <li><p>报错内容</p>
   <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Undefined symbols for architecture x86_64:</span><br><span class="line">"std::terminate()", referenced from:</span><br><span class="line">     ___clang_call_terminate in BaiduMapAPI_Base(BMKManager.o)</span><br><span class="line">     ___clang_call_terminate in BaiduMapAPI_Base(AppMan.o)</span><br><span class="line">     ___clang_call_terminate in BaiduMapAPI_Base(VLog.o)</span><br><span class="line">     ___clang_call_terminate in BaiduMapAPI_Base(VCMMap.o)</span><br><span class="line">     ___clang_call_terminate in BaiduMapAPI_Base(VBundle.o)</span><br><span class="line">     ___clang_call_terminate in BaiduMapAPI_Base(VString.o)</span><br><span class="line">     ___clang_call_terminate in BaiduMapAPI_Base(VDataStorageFactory.o)</span><br><span class="line">     ...</span><br></pre></td></tr></table></figure>
 <p>  <strong>解决方法</strong><br>  Link Binary With Libraries新增一个 libstdc++.dylib</p>
@@ -236,7 +239,7 @@
     </a>
   
   
-    <a href="/2016/05/09/iOSlcoations/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/05/09/iOS定位情况说明/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">iOS后台定位情况</div>
       <strong class="article-nav-caption">></strong>
     </a>
