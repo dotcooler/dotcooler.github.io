@@ -101,7 +101,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/UIBackgroundModes/" style="font-size: 10px;">UIBackgroundModes</a> <a href="/tags/Unable-environment-handle/" style="font-size: 10px;">Unable environment handle</a> <a href="/tags/Undefined-symbols-architecture-x86-64/" style="font-size: 10px;">Undefined symbols architecture x86_64</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/gps/" style="font-size: 10px;">gps</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/python3-python3-5/" style="font-size: 10px;">python3 python3.5</a> <a href="/tags/startMonitoringSignificantLocationChanges/" style="font-size: 10px;">startMonitoringSignificantLocationChanges</a> <a href="/tags/百度地图SDK/" style="font-size: 10px;">百度地图SDK</a> <a href="/tags/通信协议/" style="font-size: 10px;">通信协议</a> <a href="/tags/问题解决/" style="font-size: 10px;">问题解决</a>
+						<a href="/tags/UIAlertController/" style="font-size: 10px;">UIAlertController</a> <a href="/tags/UIBackgroundModes/" style="font-size: 10px;">UIBackgroundModes</a> <a href="/tags/Unable-environment-handle/" style="font-size: 10px;">Unable environment handle</a> <a href="/tags/Unbalanced-calls-to-begin-end-appearance-transitions-for-XXXX/" style="font-size: 10px;">Unbalanced calls to begin/end appearance transitions for XXXX</a> <a href="/tags/Undefined-symbols-architecture-x86-64/" style="font-size: 10px;">Undefined symbols architecture x86_64</a> <a href="/tags/object-Object/" style="font-size: 10px;">[object Object]</a> <a href="/tags/arc/" style="font-size: 10px;">arc</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/gps/" style="font-size: 10px;">gps</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/python3-python3-5/" style="font-size: 10px;">python3 python3.5</a> <a href="/tags/startMonitoringSignificantLocationChanges/" style="font-size: 10px;">startMonitoringSignificantLocationChanges</a> <a href="/tags/百度地图SDK/" style="font-size: 10px;">百度地图SDK</a> <a href="/tags/通信协议/" style="font-size: 10px;">通信协议</a> <a href="/tags/问题解决/" style="font-size: 10px;">问题解决</a>
 					</div>
 				</section>
 				
@@ -160,6 +160,195 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-iOS  Unbalanced calls to begin:end appearance transitions for XXXX" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/21/iOS  Unbalanced calls to begin:end appearance transitions for XXXX/" class="article-date">
+  	<time datetime="2016-06-21T03:00:00.000Z" itemprop="datePublished">2016-06-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/21/iOS  Unbalanced calls to begin:end appearance transitions for XXXX/">Unbalanced calls to begin/end appearance transitions for XXXX</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="iOS常见错误解决"><a href="#iOS常见错误解决" class="headerlink" title="iOS常见错误解决"></a>iOS常见错误解决</h2><hr>
+<p>报这样的警告，是因为：过于快速切换子视图控制器，导致，前一个切换动作还没有完成，就进行了下一个切换！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">个人解决的方案是直接在：</span><br><span class="line">把部分原来需要在didViewLoad下</span><br><span class="line">需要在在展示前需要加载的东西放在willAppearance里或者didAppearance下</span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>参考:</strong></p>
+<p><a href="http://blog.sina.com.cn/s/blog_7b9d64af0101dvrl.html" target="_blank" rel="external">Unbalanced calls to begin/end appearance transitions for XXXX</a></p>
+<hr>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unbalanced-calls-to-begin-end-appearance-transitions-for-XXXX/">Unbalanced calls to begin/end appearance transitions for XXXX</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-iOS常见错误解决" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/17/iOS常见错误解决/" class="article-date">
+  	<time datetime="2016-06-17T03:00:00.000Z" itemprop="datePublished">2016-06-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/17/iOS常见错误解决/">iOS常见错误解决</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="iOS常见错误解决"><a href="#iOS常见错误解决" class="headerlink" title="iOS常见错误解决"></a>iOS常见错误解决</h2><hr>
+<p><strong>遇到早期不支持arc的程序时候 单个设置</strong></p>
+<ul>
+<li>-fno -obj -arc</li>
+</ul>
+<p><strong>需要使用arc则可以这么设置</strong></p>
+<ul>
+<li>-fobjc-arc</li>
+</ul>
+<hr>
+<p><strong>Warning: Attempt to present &lt;UIAlertController：</strong>…..</p>
+<p>在代理的情况下 会出现回到主界面的时候重复跳出UIAlerContrller的情景<br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UIAlertController/">UIAlertController</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/object-Object/">[object Object]</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/arc/">arc</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/06/17/iOS常见错误解决/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Pyhton数据可视化" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/14/Pyhton数据可视化/" class="article-date">
+  	<time datetime="2016-06-13T23:15:17.000Z" itemprop="datePublished">2016-06-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Pyhton数据可视化"><a href="#Pyhton数据可视化" class="headerlink" title="Pyhton数据可视化"></a>Pyhton数据可视化</h1><h2 id="库文件的安装-Python3"><a href="#库文件的安装-Python3" class="headerlink" title="库文件的安装  Python3"></a>库文件的安装  Python3</h2><blockquote>
+<p>安装numpy<br><figure class="highlight plain"><figcaption><span>pip3 install numpy```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">+ 没有找到libpng 暂时不安装 试试</span><br><span class="line"></span><br><span class="line">&gt; 安装freetype (目前已经有3个版本了，暂时安装没有版本号的测试)</span><br><span class="line">```sudo pip3 install freetype-py</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p><strong>使用包管理工具 直接安装 更加简单</strong></p>
+<ul>
+<li><figure class="highlight plain"><figcaption><span>apt-get install python-numpy python-matploylib python-scipy```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt; 安装matplotlib</span><br><span class="line">```sudo pip3 install matplotlib</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>安装成功后</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">The directory &apos;/Users/Joy/Library/Caches/pip/http&apos; or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&apos;s -H flag.</span><br><span class="line">The directory &apos;/Users/Joy/Library/Caches/pip&apos; or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo&apos;s -H flag.</span><br><span class="line">Collecting matplotlib</span><br><span class="line">  Downloading matplotlib-1.5.1-cp35-cp35m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (49.7MB)  </span><br><span class="line">    100% |################################| 49.7MB 30kB/s </span><br><span class="line">Collecting pytz (from matplotlib)</span><br><span class="line">  Downloading pytz-2016.4-py2.py3-none-any.whl (480kB)</span><br><span class="line">    100% |################################| 481kB 2.8MB/s </span><br><span class="line">Collecting python-dateutil (from matplotlib)</span><br><span class="line">  Downloading python_dateutil-2.5.3-py2.py3-none-any.whl (201kB)</span><br><span class="line">    100% |################################| 204kB 3.7MB/s </span><br><span class="line">Collecting cycler (from matplotlib)</span><br><span class="line">  Downloading cycler-0.10.0-py2.py3-none-any.whl</span><br><span class="line">Collecting pyparsing!=2.0.0,!=2.0.4,&gt;=1.5.6 (from matplotlib)</span><br><span class="line">  Downloading pyparsing-2.1.5-py2.py3-none-any.whl (42kB)</span><br><span class="line">    100% |################################| 51kB 9.6MB/s </span><br><span class="line">Requirement already satisfied (use --upgrade to upgrade): numpy&gt;=1.6 in /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (from matplotlib)</span><br><span class="line">Collecting six&gt;=1.5 (from python-dateutil-&gt;matplotlib)</span><br><span class="line">  Downloading six-1.10.0-py2.py3-none-any.whl</span><br><span class="line">Installing collected packages: pytz, six, python-dateutil, cycler, pyparsing, matplotlib</span><br><span class="line">Successfully installed cycler-0.10.0 matplotlib-1.5.1 pyparsing-2.1.5 python-dateutil-2.5.3 pytz-2016.4 six-1.10.0</span><br></pre></td></tr></table></figure>
+<p><strong>多个项目软件环境包的重构</strong></p>
+<ul>
+<li>建议使用virtualenv 和 virtrualenvwrapper(可以使用pip装)</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-cx_Oracle的一个环境错误" class="article article-type-post" itemscope itemprop="blogPost">
   
