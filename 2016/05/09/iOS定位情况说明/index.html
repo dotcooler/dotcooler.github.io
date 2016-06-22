@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="dotCooler's Blog">
 <meta property="og:description" content="iOS定位情况说明1.使用CLLocationManager 后台定位，设置startMonitoringSignificantLocationChanges模式，没有在UIBackgroundModes中添加location，测试情况是和网上很多人说的并不一样，在某市区几乎每移动大约每4-5公里才会有一次定位记录，不太符合实现行进轨迹跟踪要求，这种情况下直接调用网络请求向服务器上传数据正常(从测">
 <meta property="og:image" content="http://it.southcn.com/9/images/attachement/jpg/site4/20110511/90fba609f5ed0f343c1e5c.jpg">
-<meta property="og:updated_time" content="2016-06-05T12:07:33.000Z">
+<meta property="og:updated_time" content="2016-06-21T09:06:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS后台定位情况">
 <meta name="twitter:description" content="iOS定位情况说明1.使用CLLocationManager 后台定位，设置startMonitoringSignificantLocationChanges模式，没有在UIBackgroundModes中添加location，测试情况是和网上很多人说的并不一样，在某市区几乎每移动大约每4-5公里才会有一次定位记录，不太符合实现行进轨迹跟踪要求，这种情况下直接调用网络请求向服务器上传数据正常(从测">
@@ -104,7 +104,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/UIAlertController/" style="font-size: 10px;">UIAlertController</a> <a href="/tags/UIBackgroundModes/" style="font-size: 10px;">UIBackgroundModes</a> <a href="/tags/Unable-environment-handle/" style="font-size: 10px;">Unable environment handle</a> <a href="/tags/Unbalanced-calls-to-begin-end-appearance-transitions-for-XXXX/" style="font-size: 10px;">Unbalanced calls to begin/end appearance transitions for XXXX</a> <a href="/tags/Undefined-symbols-architecture-x86-64/" style="font-size: 10px;">Undefined symbols architecture x86_64</a> <a href="/tags/object-Object/" style="font-size: 10px;">[object Object]</a> <a href="/tags/arc/" style="font-size: 10px;">arc</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/gps/" style="font-size: 10px;">gps</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/python3-python3-5/" style="font-size: 10px;">python3 python3.5</a> <a href="/tags/startMonitoringSignificantLocationChanges/" style="font-size: 10px;">startMonitoringSignificantLocationChanges</a> <a href="/tags/百度地图SDK/" style="font-size: 10px;">百度地图SDK</a> <a href="/tags/通信协议/" style="font-size: 10px;">通信协议</a> <a href="/tags/问题解决/" style="font-size: 10px;">问题解决</a>
+						<a href="/tags/UIAlertController/" style="font-size: 10px;">UIAlertController</a> <a href="/tags/UIBackgroundModes/" style="font-size: 10px;">UIBackgroundModes</a> <a href="/tags/Unable-environment-handle/" style="font-size: 10px;">Unable environment handle</a> <a href="/tags/Unbalanced-calls-to-begin-end-appearance-transitions-for-XXXX/" style="font-size: 10px;">Unbalanced calls to begin/end appearance transitions for XXXX</a> <a href="/tags/Undefined-symbols-architecture-x86-64/" style="font-size: 10px;">Undefined symbols architecture x86_64</a> <a href="/tags/object-Object/" style="font-size: 10px;">[object Object]</a> <a href="/tags/arc/" style="font-size: 10px;">arc</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/gps/" style="font-size: 10px;">gps</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/python3-python3-5/" style="font-size: 10px;">python3 python3.5</a> <a href="/tags/startMonitoringSignificantLocationChanges/" style="font-size: 10px;">startMonitoringSignificantLocationChanges</a> <a href="/tags/搜索/" style="font-size: 10px;">搜索</a> <a href="/tags/百度地图SDK/" style="font-size: 10px;">百度地图SDK</a> <a href="/tags/通信协议/" style="font-size: 10px;">通信协议</a> <a href="/tags/问题解决/" style="font-size: 10px;">问题解决</a>
 					</div>
 				</section>
 				
@@ -209,6 +209,10 @@
 <li>后台运行GPS定位非常消耗电量，所以建议在后台使用时降低GPS定位精度以节省用电，并确定你的用户确实需要这个功能，并在应用中给出提示说明。</li>
 <li>后台运行GPS定位有时间限制，大约10分钟时间，超过时间后系统会终止后台定位。?</li>
 </ol>
+<p>参考:</p>
+<p><a href="http://code4app.com/requirement/53031ed6cb7e84dd4c8b544b" target="_blank" rel="external">各位好，CLLocationManager 我想后台定位</a></p>
+<p><a href="http://blog.csdn.net/musou_ldns/article/details/8523954" target="_blank" rel="external">iOS应用后台运行GPS定位功能的实现</a></p>
+<p><a href="http://www.cnblogs.com/zanglitao/p/4082334.html" target="_blank" rel="external">IOS网络访问之NSURLSession</a></p>
 <p><img src="http://it.southcn.com/9/images/attachement/jpg/site4/20110511/90fba609f5ed0f343c1e5c.jpg" alt="img test1"></p>
 
       
